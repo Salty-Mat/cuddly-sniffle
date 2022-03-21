@@ -1,5 +1,6 @@
-# This is a basic workflow to help you get started with Actions
-name: remote ssh command
-
 on:
-  pull_request:
+  issues:
+    uses: satak/webrequest-action@master
+    with:
+      url: https://my-json-server.typicode.com/typicode/demo/posts
+      method: GET
